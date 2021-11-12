@@ -1,0 +1,1032 @@
+/* 
+Theme Name: Twenty Seventeen Child 
+Theme URL: http://wordpress.com
+Description: Twenty Twentyone Child 
+Theme Author: LAVIT GAETAN
+Author URL: http://wordpress.com
+Template: twentytwentyone
+Version: 1.0.0 
+Text Domain: twentyseventeen-child 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: white;
+    background: #EC694A;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(Nunito-Regular.ttf);
+}
+
+body {
+    font-family: nunito;
+    background-color: #fff;
+}
+
+#page {
+    background-color: #f5f5f5;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.page-title {
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    color: #114D61;
+    font-weight: bold;
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    color: #114D61;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.actualite-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.stretch-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navbar START*/
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #114d61;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 0px 5px 1px #00000033;
+    z-index: 100;
+}
+
+.navbar-home {
+    width: 18%;
+    height: 60px;
+    background: url(images/cpme-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-logo {
+    width: 64px;
+    height: 64px;
+}
+
+.navbar-content {
+    width: 64%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-list {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    color: #fff;
+}
+
+.navbar-item {
+    width: 25%;
+    display: flex;
+    list-style-type: none;
+    height: 80px;
+    padding-top: 1.7rem;
+    cursor: pointer;
+}
+
+.navbar-login {
+    width: 18%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button {
+    transition: .3s ease;   
+    text-decoration: none;
+    color: #fff;
+    background-color: #ec694a;
+    border: 2px solid transparent;
+    padding: 10px 16px;
+    border-radius: 2px;
+}
+
+.login-button:hover {
+    transition: .6s ease-in-out;
+    color: #fff;
+    background-color: #114d61;
+    border: 2px solid #EC694A;
+    padding: 10px 16px;
+    border-radius: 2px;
+}
+
+.navbar-droplist {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    top: 0;
+    margin-top: 80px;
+    background-color: #114d61;
+    padding: 8px 12px;
+    display: none;
+    border-top: 2px solid #ec694a;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-dropitem {
+    transition: .3s ease;
+    color: #fff;
+    border-radius: 2px;
+    list-style-type: none;
+    padding: 8px;
+    font-size: 17px;
+}
+
+.navbar-dropitem:hover {
+    transition: .3s ease;
+    color: #fff;
+    background-color: #003444;
+    cursor: pointer;
+}
+
+.dropdown-item:hover>ul {
+    visibility: visible;
+}
+
+ul li:hover>ul, ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+/* Navbar END */
+
+/*Landing START*/
+
+.landing {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #114D61 0%, #003444ee 100%);
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.landing-title {
+    font-size: 23px;
+    padding: 50px 20%;
+    text-align: center;
+    color: #fff;
+    line-height: 48.5px;
+    font-weight: normal;
+}
+
+.landing-icons {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-container {
+    background-color: #f5f5f5;
+    padding: 8px 16px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-container:hover {
+    transition: .5s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 5px #00000055;
+}
+
+.social-text {
+    font-size: 17px;
+    color: #114D61;
+    padding-left: 8px;
+}
+
+/* Landing END*/
+
+/* 5 bonnes raisons START*/
+
+.reason-card {
+    width: 18%;
+    height: auto;
+    box-shadow: 0px 4px 5px 1px #114d6133;
+    border-radius: 4px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.reason-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #15958C;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.reason-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.reason-text {
+    text-align: center;
+    padding: 10%;
+    color: #114d61;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.adhesion-button {
+    display: block;
+    transition: .3s ease-in-out;
+    background: #15958C;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    padding: 20px;
+    color: #fff;
+    margin: 50px auto;
+}
+
+.adhesion-button:hover {
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px 5px #114d6140;
+    color: #114d61;
+}
+
+/* 5 bonnes raisons END*/
+
+/* Dossier START*/
+
+.dossier-card {
+    transition: .3s ease-in;
+    width: 30%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    text-align: center;
+    padding: 25px 15px 15px 15px;
+    margin: 25px 0;
+    border-top: 4px solid #114d61;
+}
+
+.dossier-card:hover {
+    transition: .3s ease-in;
+    transform: scale(1.1);
+}
+
+.dossier-card:hover {
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.dossier-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.dossier-title {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #114d61;
+}
+
+.dossier-text {
+    font-size: 16px;
+    line-height: 175%;
+    color: #2B393E;
+}
+
+.go-to-location {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+/* Dossier END*/
+
+/* Mandats START*/
+
+.mandat-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.mandat-card {
+    background: #FFFFFF;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 5px solid #ec694a;
+    padding: 30px;
+}
+
+.mandat-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #EC694A;
+    margin-bottom: 20px;
+}
+
+.mandat-text {
+    font-size: 16px;
+    line-height: 33px;
+    color: #2B393E;
+}
+
+.mandat-illustration {
+    width: 30%;
+    margin-left: 10%;
+}
+
+.mandataire-illustration {
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mandataire-card {
+    background: #FFFFFF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 5px solid #ec694a;
+    padding: 30px;
+}
+
+/* Mandats END*/
+
+/* Login START*/
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.login-form {
+    width: 50%;
+    box-shadow: 2px 0px 10px rgba(236, 105, 74, 0.3);
+}
+
+.login-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ec684a0e;
+}
+
+.login-image img {
+    max-width: 80%;
+}
+
+.form-icon {
+    display: block;
+    margin: 0 auto 2rem auto;
+}
+
+.form-group {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form form {
+    margin: auto;
+    width: 80%;
+}
+
+.login-form label {
+    font-size: 18px;
+    line-height: 35px;
+    color: #262E39;
+    margin-bottom: .5rem;
+}
+
+#identifiant, #mot-de-passe {
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.281);
+    padding: 12px;
+    margin-bottom: 1.7rem;
+    border-radius: 4px;
+}
+
+#identifiant:focus, #mot-de-passe:focus {
+    outline: none;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px #114d6180;
+}
+
+::placeholder {
+    color: #262e398e;
+}
+
+.form-login-button {
+    transition: .3s ease-in-out;
+    padding: 10px;
+    margin: 15px auto;
+    width: 75%;
+    background: #EC694A;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-login-button:hover {
+    transition: .3s ease-in-out;
+    background: #15958C;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    width: 75%;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    color: #EC694A;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.forgot-password:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Login END*/
+
+/*Espace adhérent START*/
+
+.adherent-card {
+    transition: .3s;
+    height: auto;
+    width: 28%;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.178);
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.adherent-card:hover {
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.adherent-card:hover .adherent-header {
+    transition: .3s ease-in-out;
+    background-color: #f59e32;
+}
+
+.adherent-header {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    display: flex;
+    align-items: center;
+    background-color: #114d61;
+    padding: 15px 20px;
+}
+
+.adherent-title {
+    font-size: 19px;
+    line-height: 142.9%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 2rem;
+    font-weight: normal;
+}
+
+.adherent-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.adherent-content {
+    padding: 1em 2em;
+    font-size: 18px;
+    line-height: 153.9%;
+    text-align: center;
+    color: #262E39;
+}
+
+/* Espace adhérent END */
+
+/* Nous-connaître START */
+
+.president-card {
+    width: 80%;
+    margin: 70px auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    display: flex;
+    padding: 1em;
+}
+
+.president-photo {
+    max-height: 250px;
+    border-radius: 5px;
+}
+
+.president-content {
+    margin-left: 2rem;
+}
+
+.president-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #114d61;
+    padding-bottom: 1.5rem;
+}
+
+.president-text {
+    font-size: 17px;
+    line-height: 194%;
+    color: #2B393E;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.president-info {
+    font-size: 18px;
+    line-height: 194%;
+    color: #EC694A;
+    font-style: italic;
+}
+
+.equipe-card {
+    width: 28%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.equipe-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    filter: drop-shadow(4px 4px 1px #EC694A);
+}
+
+.equipe-role {
+    font-size: 16px;
+    line-height: 22px;
+    color: #2B393E;
+}
+
+.equipe-identite {
+    font-size: 17px;
+    line-height: 23px;
+    color: #2B393E;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.equipe-contact {
+    margin: 30px auto 15px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Nous-connaître END */
+
+/* Annuaire des adhérents START */
+
+.entreprise-card {
+    width: 40%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.entreprise-header {
+    background: #15958C;
+    padding: 20px;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.entreprise-name {
+    font-size: 21px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.entreprise-title {
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    color: #262E39;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.entreprise-row {
+    display: flex;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    align-items: center;
+}
+
+.entreprise-semirow {
+    display: flex;
+    width: 40%;
+    margin: 0 auto 20px auto;
+    margin-left: 5%;
+}
+
+.entreprise-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.entreprise-text {
+    margin-left: 1rem;
+    font-size: 16px;
+    line-height: 22px;
+    color: #262E39;
+}
+
+.entreprise-separator {
+    width: 90%;
+    height: 4px;
+    background-color: #15958C;
+    margin: 10px auto 0 auto;
+    border-radius: 50%;
+}
+
+/* Annuaire des adhérents END */
+
+/* Actualités START*/
+
+.actualite-card {
+    transition: .5s ease-in-out;
+    position: relative;
+    width: 45%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.actualite-card::before {
+    content: url(images/go-to-location.png);
+    position: absolute;
+    display: none;
+    bottom: 0;
+}
+
+.actualite-card:hover>.actualite-card::before {
+    content: url(images/go-to-location.png);
+    position: absolute;
+    display: block;
+    bottom: 0;
+}
+
+.actualite-header {
+    width: 100%;
+    height: 100px;
+}
+
+.actualite-image {
+    width: 100%;
+    height: 100%;
+}
+
+.actualite-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 148.9%;
+    color: #EC694A;
+    width: 90%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.actualite-text {
+    font-size: 17px;
+    line-height: 30px;
+    color: #2B393E;
+    width: 80%;
+    margin: auto;
+}
+
+.actualite-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+.slide-options {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-evenly;
+}
+
+.slide-button {
+    padding: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #15958c;
+}
+
+.slide-button--active {
+    padding: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ec694a;
+}
+
+/* Actualités END*/
+
+/* Article START*/
+
+.article-header {
+    margin-top: 80px;
+    width: 100%;
+    height: 40vh;
+    background-image: url(images/article-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-title {
+    width: 100%;
+    background-color: #262e39a1;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Article END*/
+
+/* Footer START */
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: #003444;
+}
+
+/* Footer END */
+
+/* Scroll Button START*/
+
+#scroll-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    z-index: 99;
+    background-color: #15958c;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 1px 2px #fff;
+  }
+  
+#scroll-button:hover {
+    transition: .3s ease-in;
+    background-color: #ec694a;
+}
+
+/* Scroll Button END*/
+
+/* RESPONSIVE */
+
+/* RESPONSIVE Tablette*/
+
+@media screen and (max-width:1050px) {
+    .landing-title {
+        padding: 50px 10%;
+    }
+    .landing-icons {
+        width: 80%;
+    }
+    .reason-card {
+        width: 30%; 
+    }
+    .reason-header {
+        height: 85px;
+    }
+    .reason-text {
+        padding: 7.5%;
+    }
+    .entreprise-card {
+        width: 80%;
+    }
+    .dossier-card:hover {
+        transform: unset;
+    }
+    .dossier-card {
+        width: 48%;
+        box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px 20px 10px 20px;
+        margin: 10px 0;
+    }
+    .dossier-icon {
+        width: 48px;
+        height: 48px;
+        float: left;
+    }
+    .dossier-title {
+        font-size: 18px;
+        padding: 20px;
+    }
+    .adherent-card {
+        width: 45%;
+    }
+
+    .adherent-title {
+        text-align: left;
+    }
+}
+
+/* RESPONSIVE Smartphone*/
+
+@media screen and (max-width:550px) {
+    .landing {
+        margin-bottom: 20px;
+    }
+    .landing-title {
+        padding: 25px 10%;
+    }
+    .landing-icons {
+        width: 90%;
+    }
+    .title {
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 150%;
+    }
+    .reason-card {
+        width: 45%;
+    }
+    .reason-header {
+        height: 70px;
+    }
+    .reason-text {
+        padding: 5%;
+    }
+    .reason-text {
+        font-size: 16px;
+    }
+    .adhesion-button {
+        margin: 20px auto;
+    }
+    .navbar-content {
+        display: none;
+    }
+    .navbar-home {
+        display: none;
+    }
+    .navbar-login {
+        display: none;
+    }
+    .page-title {
+        font-size: 20px;
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+    .entreprise-card {
+        width: 95%;
+    }
+    .dossier-card {
+        width: 90%;
+        box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px 20px 10px 20px;
+        margin: 10px 0;
+    }
+    .dossier-icon {
+        width: 48px;
+        height: 48px;
+        float: left;
+    }
+    .dossier-title {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .adherent-card {
+        width: 90%;
+    }
+
+    .adherent-title {
+        text-align: center;
+    }
+}
